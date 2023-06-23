@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Drawer } from '@mui/material';
-import SideBarLeft from './components/SildeBarLeft';
+import { Box, Card, Drawer, Grid, Skeleton } from '@mui/material';
+import NewFeedSkeleton from './components/NewFeedSkeleton';
 
 NewsFeed.propTypes = {
     
@@ -10,11 +10,12 @@ NewsFeed.propTypes = {
 function NewsFeed(props) {
     return (
         <div>
-            
-            <SideBarLeft>
 
-            </SideBarLeft>
-        </div>
+        <NewFeedSkeleton></NewFeedSkeleton>
+        <NewFeedSkeleton></NewFeedSkeleton>
+      
+            
+         </div>
     );
 }
 

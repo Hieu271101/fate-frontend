@@ -7,6 +7,7 @@ import Header from './components/Header'
 import SideBar from './components/SideBar'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
+import SubSideBar from './components/SubSideBar'
 
 
 
@@ -19,12 +20,13 @@ function App() {
            
            <Header ></Header>
           
-           <div style={{display:"flex", flexDirection:"row", flex: 1}}>
+           <div style={{display:"flex", flexDirection:"row", flex: 1, position: "relative"}}>
                <SideBar ></SideBar>
               <MainContent></MainContent>
+              {/* <SubSideBar style={{position:"absolute", right:0}}></SubSideBar> */}
            </div>
            
-           <Footer></Footer>
+         
        </div>
     </>
   )

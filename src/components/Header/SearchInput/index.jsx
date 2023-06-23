@@ -2,24 +2,22 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
-import './styles.scss'
+import './styles.scss';
 export default function SearchInput() {
-    const myStyle = {
-        backgroundColor: 'white',
-        fontSize: '16px',
-        fontWeight: 'bold',
-      };
+  
 
   return (
-    <Stack spacing={2} style={myStyle} sx={{ width: 300 }}>
+    // <Stack
+    //   spacing={2}
+    //   sx={{ width: 300, backgroundColor: 'white', fontSize: '20px', fontWeight: 'bold', borderRadius:'15px' }}
+    // >
       <Autocomplete
         id="free-solo-demo"
         freeSolo
         options={top100Films.map((option) => option.title)}
-        renderInput={(params) => <TextField {...params} label="Search..." />}
+        renderInput={(params) => <TextField sx={{ height: '50px' , backgroundColor: 'white', borderRadius:'15px', width: 300 }} {...params} placeholder='Search...'/>}
       />
-     
-    </Stack>
+    // </Stack>
   );
 }
 

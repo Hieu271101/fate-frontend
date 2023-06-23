@@ -6,11 +6,11 @@ import FilterSkeleton from '../../components/FilterSkeleton';
 
 
 
-ListProduct.propTypes = {
+ListPage.propTypes = {
     
 };
 
-function ListProduct(props) {
+function ListPage(props) {
 
     const [loading, setLoading] = useState(true);
 
@@ -19,7 +19,7 @@ function ListProduct(props) {
             <Box>
                 <Container>
                     <Grid container spacing={2}>
-                        <Grid item sx={{width: '250px'}}>
+                        <Grid item sx={{width: '220px'}}>
                             <Paper elevation={0}>
                                 <Grid item  xs={12} sm={6} md={6} lg={11}>
                                     Filter
@@ -40,4 +40,4 @@ function ListProduct(props) {
     );
 }
 
-export default ListProduct;
+export default ListPage;
